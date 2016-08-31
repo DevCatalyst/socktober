@@ -1,0 +1,257 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* HELPERS FOR NAVBAR  */ 
+
+/* navbar */
+.navbar-default {
+    background-color: #000026;
+    border-color: #000026;
+    background-image: none;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #f4A602;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #f45b00;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #f4A602;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #f45b00;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #000033; /* !!!!!!!! */
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#gallery-img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#caption {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form {
+    font-family: "Cabin", sans-serif;
+}
+
+#form-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a {
+    color: #008080;
+}
+
+a:hover {
+    color: #f4A602;
+    text-decoration: none;
+}
+
+hr {
+    border-color: #008080;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flyer-img img {
+    height: 200px;
+    width: auto;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flyer-img {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-top: 10px;
+}
+
+h1{
+    font-family: "Cabin Sketch", serif;
+    color: #008080;
+    font-size: 42px;
+}
+
+.col-md-6 {
+    text-align: justify;
+}
+
+.navbar-brand {
+    font-family: "Cabin Sketch", sans-serif;
+    display: inline;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: #f45b00;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 40px;
+    display: inline;
+    padding-top: 0px;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.nav li a {
+    font-family: "Cabin", sans-serif;
+    color: #f4A602;
+}
+
+.jumbotron {
+    background-color: #008080;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    font-family: "Cabin Sketch", sans-serif;
+    color: #f4A602;
+}
+
+.photo-gallery-img {
+    width: 100%;
+}
+
+p {
+    font-family: "Cabin", serif;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: "Cabin Sketch", serif;
+    color: #f45b00;
+    font-size: 34px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+h2 img {
+    height: 45px;
+    width: 45px;
+}
+
+.buildings img {
+    width: 32%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+footer {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 15px;
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 24px;
+}
+
+footer .small {
+    padding-top: 0px;
+}
+
+footer .small:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.social-icon {
+  height: 50px;
+  margin: 0 40px;
+}
+
+.video {
+    float: left;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#rap-video {
+    margin-top: 50px;
+}
+
+#map{
+    max-width: 100%;
+}

@@ -1,0 +1,45 @@
+/* .c-head{
+    background-color: #000026;
+    background-image: none;
+    font-family: "Cabin Sketch", serif;
+    font-size: 27px;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 18px;
+    margin-top:0; 
+    margin-bottom: -55px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 27px;
+    font-family: "Cabin Sketch", serif;
+} */
+
+#map{
+    min-height: 400px;
+}
+
+h1{
+    font-family: "Cabin Sketch", serif;
+    color: #008080;
+    font-size: 42px;
+}
+
+#info{
+    font-size: 20px;
+}
+
+/* body{
+    background-image: url("../img/doodle.png");    
+    background-repeat: repeat;
+    background-attachment: fixed;
+} */
+
+#logo{
+    height: 50px;
+    margin: px;
+    border-radius: 25px;
+}
+
+.nav-item{
+    padding-top: 13px;
+}
