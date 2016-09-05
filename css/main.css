@@ -204,7 +204,14 @@ h2 {
     text-align: left;
 }
 
-h2 img {
+h3 {
+    font-family: "Cabin Sketch", serif;
+    color: #f4A602;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+h3 img {
     height: 45px;
     width: 45px;
 }
