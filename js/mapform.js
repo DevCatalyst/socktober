@@ -19,7 +19,6 @@ function geocodeAddress(geocoder, address) {
     return false;
   }
 });
-}
 
 
 /** Removed #1:  resultsMap.setCenter(results[0].geometry.location);
