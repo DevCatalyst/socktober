@@ -247,6 +247,15 @@ footer .small:hover {
 .social-icon {
   height: 50px;
   margin: 0 40px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.social-icon:hover {
+    height: 55px;
 }
 
 .video {
@@ -261,4 +270,14 @@ footer .small:hover {
 
 #map{
     max-width: 100%;
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+}
+
+h4 {
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 23px;
 }
