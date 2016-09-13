@@ -4,8 +4,26 @@ function checkProfanity( data ) {
 }
 
 function checkLocation( address ) {
+    
+     function geocodeAddress(geocoder, resultsMap) {
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            var geocodelat = results[0].geometry.location.lat();
+            var geocodelong = results[0].geometry.location.lng();
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+    
+    
+    
+    
 	var geocoder = new google.maps.Geocoder();
 	geocodeAddress(geocoder, address);
+
 }
 
 function storeFormData( data ) {
@@ -13,9 +31,10 @@ function storeFormData( data ) {
 	// map-form-processor.php
 }
 
-$('#map-form').submit(function(event) {
+$('#map-form').click(function(event) {
 	// to stop the form from submitting and refreshing page
 	event.preventDefault();
+    console.log("Hi")
 
 	//collection data from form >> https://api.jquery.com/serializeArray/
 	var data = [];
@@ -33,7 +52,8 @@ $('#map-form').submit(function(event) {
 	if ( !longLad ) {
 		throw new error("Location not found. :(");
 	}
-	
+	console.log(geocodelat);
+    console.log(geocodelong);
 	// checkLocation success, add long and lad to data object
 	$.extend(data,longLad);
 
