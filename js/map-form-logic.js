@@ -11,6 +11,7 @@ function checkLocation( address ) {
           if (status === 'OK') {
             var geocodelat = results[0].geometry.location.lat();
             var geocodelong = results[0].geometry.location.lng();
+              console.log("hi")
             });
           } else {
             alert('Geocode was not successful for the following reason: ' + status);
