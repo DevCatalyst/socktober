@@ -1,55 +1,55 @@
-    <!doctype html>
+<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Socktober | Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Socktober | Home</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-                background-image: url("img/doodle.png");    
-                background-repeat: repeat;
-                background-attachment: fixed;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/cowboy-css.css">
-        <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch|Cabin' rel='stylesheet' type='text/css'>
-        
-        
-        <script> function geocodeAddress(geocoder, resultsMap) {
-        var address = document.getElementById('address').value;
-        geocoder.geocode({'address': address}, function(results, status) {
-          if (status === 'OK') {
-            var geocodelat = results[0].geometry.location.lat();
-            var geocodelong = results[0].geometry.location.lng();
-              console.log("hi")
-            });
-          } else {
-            alert('Geocode was not successful for the following reason: ' + status);
-          }
-        } </script>
-        
-        <script src="js/share.js"></script>
-<!--        <script src="js/mapform.js"></script>-->
-        <script src="js/map-form-logic.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+      body {
+          padding-top: 50px;
+          padding-bottom: 20px;
+          background-image: url("img/doodle.png");
+          background-repeat: repeat;
+          background-attachment: fixed;
+      }
+  </style>
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cowboy-css.css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch|Cabin' rel='stylesheet' type='text/css'>
 
-        <!--[if lt IE 9]>
-            <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <!-- <script> function geocodeAddress(geocoder, resultsMap) {
+  var address = document.getElementById('address').value;
+  geocoder.geocode({'address': address}, function(results, status) {
+    if (status === 'OK') {
+      var geocodelat = results[0].geometry.location.lat();
+      var geocodelong = results[0].geometry.location.lng();
+        console.log("hi")
+      });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  } </script> -->
+
+  <script src="js/share.js"></script>
+  <!--<script src="js/mapform.js"></script>-->
+  <!-- <script src="js/map-form-logic.js"></script> -->
+
+  <!--[if lt IE 9]>
+      <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -58,9 +58,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
-              <img src="img/sockpuppets.PNG">
-              Socktober</a>
+          <a class="navbar-brand" href="index.html"><img src="img/sockpuppets.PNG">
+            Socktober</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -72,24 +71,23 @@
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
-            
-   
+
     <div class="container">
-      <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-12">
+      <!-- <div class="row">
+        <div class="col-md-12">
           <h2>Tell the world about your drive!</h2>
-          <p id="info" >People around the world are participating in Socktober! Each marker on the map below represents a group raising socks. Click on a marker to learn more about a drive! </p>          
-       </div>
+          <p id="info" >People around the world are participating in Socktober! Each marker on the map below represents a group raising socks. Click on a marker to learn more about a drive! </p>
         </div>
-      <div class="row">                  
-          <div class="col-md-9 " id="map"></div>
-         <br><br>
-          <div class="col-md-3">
-              <div> <p style="padding-left:20%; padding-right:10%; font-size: 20px"> Want to appear on the map? Tell us about your drive! </p>
-              </div>
-            <div>
-          <form style="padding-left:20%; padding-right:10%; font-family: Cabin, sans-serif;" id="map-form">
+      </div>
+      <div class="row">
+        <div class="col-md-9 " id="map"></div>
+        <br><br>
+        <div class="col-md-3">
+          <div>
+            <p style="padding-left:20%; padding-right:10%; font-size: 20px"> Want to appear on the map? Tell us about your drive! </p>
+          </div>
+          <div>
+            <form style="padding-left:20%; padding-right:10%; font-family: Cabin, sans-serif;" id="map-form">
               Your Group's Name<br>
               <input id="organization" type="text"><br>
               Location<br>
@@ -99,140 +97,129 @@
               Your Sock Goal<br>
               <input id="num_socks" type="text"><br><br>
               <input type="button" id="submit" value="Submit">
-              </form>
-              </div>
-              <!--p id="test">Howdy</p-->
+            </form>
           </div>
-
-        
-      </div> 
-        <hr>
-       
-        <div class="row">
-          <div class="col-md-12">
-              <h2>Finished your sock drive? Now share your story!</h2>
-          </div>
-        <div class="col-md-12">
-            <p>Film or take a photo of yourself while working your sock drive or dropping off your socks at the homeless shelter! Share your story on social media with #socktober or email it to <a href="mailto:brad@montagueworkshop.com">brad@montagueworkshop.com</a>.</p>
         </div>
-    </div>
-          
+      </div>  -->
 
-    
+      <!-- <hr> -->
 
-          <footer>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Finished your sock drive? Now share your story!</h2>
+        </div>
+        <div class="col-md-12">
+          <p>Film or take a photo of yourself while working your sock drive or dropping off your socks at the homeless shelter! Share your story on social media with #socktober or email it to <a href="mailto:brad@montagueworkshop.com">brad@montagueworkshop.com</a>.</p>
+        </div>
+      </div>
+
+      <footer>
         <img src="img/leftLighting.png" alt="lightning Bolt" class="social-icon lightning" data-toggle="modal" data-target="#myModal">
         <a href ="https://www.facebook.com/KidPresident/">
-            <img src="img/facebook.png" alt="facebook logo" class="social-icon social-icon-link"></a>
+          <img src="img/facebook.png" alt="facebook logo" class="social-icon social-icon-link"></a>
         <a href ="https://twitter.com/iamkidpresident">
-            <img src="img/twitter.png" alt="twitter logo" class="social-icon social-icon-link"></a>
+          <img src="img/twitter.png" alt="twitter logo" class="social-icon social-icon-link"></a>
         <a href ="https://www.youtube.com/playlist?list=PLzvRx_johoA-YabI6FWcU-jL6nKA1Um-t">
-            <img src="img/youTube.png" alt="youTube logo" class="social-icon social-icon-link"></a>
+          <img src="img/youTube.png" alt="youTube logo" class="social-icon social-icon-link"></a>
         <a href ="https://www.instagram.com/iamkidpresident/">
-            <img src="img/instagram.png" alt="Instagram logo" class="social-icon social-icon-link"></a>
+          <img src="img/instagram.png" alt="Instagram logo" class="social-icon social-icon-link"></a>
         <img src="img/rightLighting.png" alt="lightning Bolt" class="social-icon lightning" data-toggle="modal" data-target="#myModal">
         <p>&copy; Socktober 2016</p>
         <p class="small">created by <a href="http://www.attheco.com/devcatalyst">Dev.Catalyst</a> students</p>
-    </footer>
-        
-        <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+      </footer>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">The Dev.Catalyst team says that you're awesome!</h4>
-      </div>
-      <div class="modal-body">
-        <img src="img/devcatalyst.jpg">
-      </div>
-    </div>
+      <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-  </div>
-</div>
-    </div> <!-- /container -->        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">The Dev.Catalyst team says that you're awesome!</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/devcatalyst.jpg">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-    
+
     <!-- notify.js for notication messages -->
-    <script src="js/vendor/notify.min.js"></script>
+    <!-- <script src="js/vendor/notify.min.js"></script> -->
 
     <!-- process map form -->
-                <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLIEjz46t3FeO5B2-XrSnZJQ3QWL1j0c8&callback=initMap">
-    </script>
-
+   <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLIEjz46t3FeO5B2-XrSnZJQ3QWL1j0c8&callback=initMap">
+    </script> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
         function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
     </script>
-   
-        <!--      The following is JavaScript for the Google Map. -->
+
+    <!--The following is JavaScript for the Google Map. -->
 <!--
-      <script>
+    <script>
     function initMap() {
-        
+
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2, //Selects zoom
           center: {lat: 10, lng: 11} //Selects center of the map
         });
 
           //Marker 1
-          
-        var marker = new google.maps.Marker({ 
-          position: {lat: 35.4392, lng: -88.6414}, 
-          map: map,   
-         
+
+        var marker = new google.maps.Marker({
+          position: {lat: 35.4392, lng: -88.6414},
+          map: map,
+
         });
-          
-              var infowindow = new google.maps.InfoWindow({ 
+
+              var infowindow = new google.maps.InfoWindow({
           content: '<b>Chester County High School</b><br>'+
                   'Henderson, TN <br><br>'+
                   'We collected 1000 pairs of socks!'
-                  
-        });        
-                    
+
+        });
+
           marker.addListener('click', function() {
           infowindow.open(map, marker); //This assigns the infowindow to the marker.
         })
-          
-          /////          
-          
+
+          /////
+
           //Marker 2
           var marker2 = new google.maps.Marker({
           position: {lat: 55.8908, lng: -4.3347},
           map: map,
           title: 'This is what appears when you hover.'
         });
-          
+
           var infowindow2 = new google.maps.InfoWindow({
           content: '<b>Knightswood Secondary School</b><br>'+
               'Glasgow, Scotland<br><br>'+
               'We collected 2 pairs of socks!'
-              
-        });        
-                    
+
+        });
+
           marker2.addListener('click', function() {
           infowindow2.open(map, marker2);
         })
-      
+
            }
-      </script>      
+    </script>
 -->
-      
-  
-           
-<!--      Nasty JavaScript over. You survived.-->
     </body>
 </html>
