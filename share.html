@@ -26,7 +26,22 @@
         <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch|Cabin' rel='stylesheet' type='text/css'>
         
         
+        <script> function geocodeAddress(geocoder, resultsMap) {
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            var geocodelat = results[0].geometry.location.lat();
+            var geocodelong = results[0].geometry.location.lng();
+              console.log("hi")
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        } </script>
+        
         <script src="js/share.js"></script>
+<!--        <script src="js/mapform.js"></script>-->
+        <script src="js/map-form-logic.js"></script>
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
@@ -57,7 +72,7 @@
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
-        
+            
    
     <div class="container">
       <!-- Example row of columns -->
@@ -151,8 +166,7 @@
                 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLIEjz46t3FeO5B2-XrSnZJQ3QWL1j0c8&callback=initMap">
     </script>
-    <script src="js/mapform.js"></script>
-    <script src="js/map-form-logic.js"></script>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
