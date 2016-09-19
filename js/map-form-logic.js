@@ -5,6 +5,8 @@ function checkProfanity( data ) {
 
 function checkLocation( address ) {
     
+            var geocoder = new google.maps.Geocoder();
+    
      function geocodeAddress(geocoder, resultsMap) {
         var address = document.getElementById('address').value;
         geocoder.geocode({'address': address}, function(results, status) {
@@ -18,14 +20,11 @@ function checkLocation( address ) {
           }
         });
       }
-    
-    
-    
-    
-	var geocoder = new google.maps.Geocoder();
-	geocodeAddress(geocoder, address);
+
 
 }
+
+
 
 function storeFormData( data ) {
 	// send data to PHP to add to file
