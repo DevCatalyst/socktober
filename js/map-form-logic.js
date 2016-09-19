@@ -5,7 +5,7 @@ var organizations = $.getJSON( "./js/organizations.json", function(data) {
   return data;
 })
   .fail(function() {
-    console.log( "error" );
+    console.log( "error getting JSON" );
   });
 
 function checkProfanity( data ) {
@@ -29,11 +29,12 @@ function storeData( data ) {
     data: data,
     success: function(response) {
         console.log(response);
+        return true;
     }
 	});
 }
 
-function addDataPointsToMap() {
+function addDataPointsToMap(data) {
 	// get to it
 }
 
@@ -86,11 +87,10 @@ $('#map-form').submit(function(event) {
 		throw new error("Submission wasn't successful: Error 1215 :(");
 	}
 	
+	// update the map data
 	addDataPointsToMap(organizations);
 
 	// notify user of a successful addition to the map
 	organization = document.getElementById('organization').value;
 	$("#map-form").notify("Hi, "+ organization +"! Thanks for the submission!", "success");
-
-	// update the map data
 });
