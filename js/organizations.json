@@ -1,0 +1,14 @@
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": "test"
+    },
+    "glossary1": {
+        "title": "example glossary",
+        "GlossDiv": "test"
+    },
+    "glossary2": {
+        "title": "example glossary",
+        "GlossDiv": "test"
+    }
+}
