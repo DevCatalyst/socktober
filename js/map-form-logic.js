@@ -5,26 +5,26 @@ function checkProfanity( data ) {
 
 function checkLocation( address ) {
     
+            var geocoder = new google.maps.Geocoder();
+    
      function geocodeAddress(geocoder, resultsMap) {
         var address = document.getElementById('address').value;
         geocoder.geocode({'address': address}, function(results, status) {
           if (status === 'OK') {
             var geocodelat = results[0].geometry.location.lat();
             var geocodelong = results[0].geometry.location.lng();
+              console.log("hi")
             });
           } else {
             alert('Geocode was not successful for the following reason: ' + status);
           }
         });
       }
-    
-    
-    
-    
-	var geocoder = new google.maps.Geocoder();
-	geocodeAddress(geocoder, address);
+
 
 }
+
+
 
 function storeFormData( data ) {
 	// send data to PHP to add to file
