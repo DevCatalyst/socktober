@@ -1,92 +1,104 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
-/* HELPERS FOR NAVBAR  */ 
+/* HELPERS FOR NAVBAR  */
+
 
 /* navbar */
+
 .navbar-default {
     background-color: #000026;
     border-color: #000026;
     background-image: none;
 }
+
+
 /* title */
+
 .navbar-default .navbar-brand {
     color: #f4A602;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #f45b00;
 }
+
+
 /* link */
-.navbar-default .navbar-nav > li > a {
+
+.navbar-default .navbar-nav>li>a {
     color: #f4A602;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
     color: #f45b00;
 }
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus {
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
     color: #555;
-    background-color: #000033; /* !!!!!!!! */
+    background-color: #000033;
+    /* !!!!!!!! */
 }
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus {
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
     color: #555;
     background-color: #D5D5D5;
 }
+
+
 /* caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
+
+.navbar-default .navbar-nav>.dropdown>a .caret {
     border-top-color: #777;
     border-bottom-color: #777;
 }
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+
+.navbar-default .navbar-nav>.dropdown>a:hover .caret,
+.navbar-default .navbar-nav>.dropdown>a:focus .caret {
     border-top-color: #333;
     border-bottom-color: #333;
 }
-.navbar-default .navbar-nav > .open > a .caret, 
-.navbar-default .navbar-nav > .open > a:hover .caret, 
-.navbar-default .navbar-nav > .open > a:focus .caret {
+
+.navbar-default .navbar-nav>.open>a .caret,
+.navbar-default .navbar-nav>.open>a:hover .caret,
+.navbar-default .navbar-nav>.open>a:focus .caret {
     border-top-color: #555;
     border-bottom-color: #555;
 }
+
+
 /* mobile version */
+
 .navbar-default .navbar-toggle {
     border-color: #DDD;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: #DDD;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #CCC;
 }
 
 @media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
         color: #777;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
         color: #333;
     }
 }
-
-
-
-
-
-
-
-
-
 
 #gallery-img {
     width: 100%;
@@ -98,6 +110,10 @@
 #caption {
     font-weight: bold;
     font-size: 16px;
+}
+
+.centered {
+    text-align: center;
 }
 
 form {
@@ -145,7 +161,7 @@ hr {
     margin-top: 10px;
 }
 
-h1{
+h1 {
     font-family: "Cabin Sketch", serif;
     color: #008080;
     font-size: 42px;
@@ -246,13 +262,13 @@ footer .small:hover {
 }
 
 .social-icon {
-  height: 50px;
-  margin: 0 40px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+    height: 50px;
+    margin: 0 40px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 .social-icon:hover {
@@ -269,7 +285,7 @@ footer .small:hover {
     margin-top: 0px;
 }
 
-#map{
+#map {
     max-width: 100%;
 }
 
